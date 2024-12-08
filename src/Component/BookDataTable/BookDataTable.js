@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 
 export default class BookDataTable extends Component {
   render() {
+    let {name , author , year} = this.props
     return (
       <tr>
-        <td>game of thrones</td>
-        <td>goerge r.r.martin</td>
-        <td>2010</td>
+        <td>{name}</td>
+        <td>{author}</td>
+        <td>{year}</td>
       </tr>
     )
   }
